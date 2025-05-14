@@ -25,22 +25,27 @@ Cette application console Python simule un jeu où l'ordinateur devine automatiq
 2. **Se placer dans le bon répertoire:**
    ```bash
    cd "LOG430-01"
-2. **Installer les packages:**
+5. **Construire le projet avec Docker Compose:**
    ```bash
-   pip install -r requirements.txt
-3. **Lancer le jeu:**
+   docker build -t devine-le-nombre .
+5. **Lancer le jeu avec Docker Compose:**
    ```bash
-   python3 src/main.py
+   docker-compose run devine-le-nombre
 # 📁 Structure du projet
     LOG430-01/
     │
     ├── src/                  # Contient le code source principal
+        ├── __init__.py       # Fichier qui rend src un package
     │   └── main.py           # Script principal du jeu
     ├── tests/                # Contient les tests
-    │   └── main_test.py      # Script principal du test du jeu
+        ├── __init__.py       # Fichier qui rend tests un package
+    │   └── main_test.py      # Script de test du jeu
     │
     ├── .gitignore            # Fichiers à ignorer par Git
     ├── compose.yaml          # Fichier de config Docker Compose
     ├── Dockerfile            # Fichier de condig Docker
     ├── README.md             # Ce fichier
     └── requirements.txt      # Fichier contenant les packages à intstaller
+
+# ✅ Exécution réussie de la pipeline CI/CD
+![My Image](exec_pipeline.png)
