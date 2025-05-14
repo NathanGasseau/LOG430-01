@@ -35,10 +35,10 @@ Cette application console Python simule un jeu où l'ordinateur devine automatiq
     LOG430-01/
     │
     ├── src/                  # Contient le code source principal
-        ├── __init__.py       # Fichier qui rend src un package
+    │   ├── __init__.py       # Fichier qui rend src un package
     │   └── main.py           # Script principal du jeu
     ├── tests/                # Contient les tests
-        ├── __init__.py       # Fichier qui rend tests un package
+    │   ├── __init__.py       # Fichier qui rend tests un package
     │   └── main_test.py      # Script de test du jeu
     │
     ├── .gitignore            # Fichiers à ignorer par Git
