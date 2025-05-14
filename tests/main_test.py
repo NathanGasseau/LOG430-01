@@ -1,12 +1,5 @@
 """Tests unitaires pour la fonction verifier_nombre du jeu Devine le Nombre."""
-
-import sys
-import os
-
-# Ajouter le répertoire 'src' au chemin de recherche des modules
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
-
-from main import verifier_nombre  # noqa: E402
+from src.main import verifier_nombre
 
 
 def test_trop_petit():
