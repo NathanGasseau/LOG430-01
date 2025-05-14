@@ -1,7 +1,9 @@
 name: Deviner le nombre
 run-name: ${{ github.actor }} roule le workflow de Deviner le nombre...
-on: [push]
-
+on:
+  push:
+  pull_request:
+  
 jobs:
   Devine-Le-Nombre-Workflow:
     runs-on: ubuntu-latest
