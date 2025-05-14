@@ -6,7 +6,7 @@
 
 # 🎯 Devine le Nombre
 
-Cette application console Python permet à l’utilisateur de deviner un nombre généré aléatoirement dans un intervalle défini par l'utilisateur. Elle fournit des indices à chaque tentative jusqu'à ce que l'utilisateur trouve le bon nombre.
+Cette application console Python simule un jeu où l'ordinateur devine automatiquement un nombre généré aléatoirement entre 1 et 100. En utilisant une stratégie de recherche dichotomique, le programme ajuste ses tentatives en fonction des indices reçus (« plus grand » ou « plus petit ») jusqu'à trouver le bon nombre. Aucune saisie manuelle n'est requise.
 
 ---
 
@@ -22,10 +22,9 @@ Cette application console Python permet à l’utilisateur de deviner un nombre 
 1. **Cloner le dépôt :**
    ```bash
    git clone https://github.com/NathanGasseau/LOG430-01.git
-   cd "LOG430-01"
-2. **Activer l'environment virtuel:**
+2. **Se placer dans le bon répertoire:**
    ```bash
-   source venv/bin/activate
+   cd "LOG430-01"
 2. **Installer les packages:**
    ```bash
    pip install -r requirements.txt
@@ -37,6 +36,11 @@ Cette application console Python permet à l’utilisateur de deviner un nombre 
     │
     ├── src/                  # Contient le code source principal
     │   └── main.py           # Script principal du jeu
+    ├── tests/                # Contient les tests
+    │   └── main_test.py      # Script principal du test du jeu
     │
     ├── .gitignore            # Fichiers à ignorer par Git
-    └── README.md             # Ce fichier
+    ├── compose.yaml          # Fichier de config Docker Compose
+    ├── Dockerfile            # Fichier de condig Docker
+    ├── README.md             # Ce fichier
+    └── requirements.txt      # Fichier contenant les packages à intstaller
