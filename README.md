@@ -8,6 +8,10 @@
 
 Cette application console Python simule un jeu où l'ordinateur devine automatiquement un nombre généré aléatoirement entre 1 et 100. En utilisant une stratégie de recherche dichotomique, le programme ajuste ses tentatives en fonction des indices reçus (« plus grand » ou « plus petit ») jusqu'à trouver le bon nombre. Aucune saisie manuelle n'est requise.
 
+## 🔀 Choix de technologie
+- Python : J’ai choisi d’utiliser Python comme langage de programmation, car il fonctionne bien dans un environnement Linux.
+
+- Pytest : J’ai décidé d’utiliser la librairie Pytest, car je l’avais utilisée dans le passé et elle est relativement simple à prendre en main.
 ---
 
 ## 🔧 Instructions d’exécution
@@ -48,4 +52,12 @@ Cette application console Python simule un jeu où l'ordinateur devine automatiq
     └── requirements.txt      # Fichier contenant les packages à intstaller
 
 # ✅ Exécution réussie de la pipeline CI/CD
+#### Fonctionnement:
+
+1. Ce workflow s'exécute automatiquement lors d’un push ou sur n’importe quelle branche ou lors d’une pull request.
+2. Vérifie la qualité du code.
+3. Exécute les tests dans un environnement Dockerisé.
+4. Construit et publie automatiquement l’image Docker sur Docker Hub après chaque modification du code.
+
+#### Démo exécution:
 ![My Image](exec_pipeline.png)
