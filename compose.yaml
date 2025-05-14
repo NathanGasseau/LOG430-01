@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  devine-le-nombre:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: devine-le-nombre
+    image: devine-le-nombre:latest
+    tty: true
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: devine-le-nombre:latest
+    container_name: tests
+    command: pytest
