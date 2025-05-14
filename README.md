@@ -23,7 +23,13 @@ Cette application console Python permet à l’utilisateur de deviner un nombre 
    ```bash
    git clone https://github.com/NathanGasseau/LOG430-01.git
    cd "LOG430-01"
-2. **Lancer le jeu:**
+2. **Activer l'environment virtuel:**
+   ```bash
+   source venv/bin/activate
+2. **Installer les packages:**
+   ```bash
+   pip install -r requirements.txt
+3. **Lancer le jeu:**
    ```bash
    python3 src/main.py
 # 📁 Structure du projet
